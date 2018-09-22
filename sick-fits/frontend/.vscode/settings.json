@@ -4,5 +4,10 @@
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
     "titleBar.inactiveBackground": "#FFC600CC"
+  },
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
   }
 }

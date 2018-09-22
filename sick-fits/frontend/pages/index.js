@@ -1,7 +1,7 @@
-import Link from 'next/link'
+import Items from '../components/Items'
 
-export default () => (
+export default props => (
   <div>
-    <p>Hey</p>
+    <Items id={props.id} page={+props.query.page || 1} />
   </div>
 )

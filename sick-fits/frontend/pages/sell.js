@@ -1,3 +1,9 @@
 import Link from 'next/link'
 
-export default () => <p>Sell</p>
+import CreateItem from '../components/CreateItem'
+
+export default () => (
+  <div>
+    <CreateItem />
+  </div>
+)
