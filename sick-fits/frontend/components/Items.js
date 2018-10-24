@@ -43,7 +43,7 @@ export default class Items extends Component {
             return (
               <ItemsList>
                 {data.items.map(item => (
-                  <Item key={item.id} item={item} />
+                  <Item key={`${item.id}-item`} item={item} />
                 ))}
               </ItemsList>
             )

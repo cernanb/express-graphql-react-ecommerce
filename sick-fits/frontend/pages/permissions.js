@@ -1,10 +1,10 @@
 import PleaseSignin from '../components/PleaseSignin'
-import CreateItem from '../components/CreateItem'
+import Permissions from '../components/Permissions'
 
 export default () => (
   <div>
     <PleaseSignin>
-      <CreateItem />
+      <Permissions />
     </PleaseSignin>
   </div>
 )
