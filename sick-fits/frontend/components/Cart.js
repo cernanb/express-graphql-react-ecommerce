@@ -11,6 +11,7 @@ import CartItem from './CartItem'
 import Supreme from './styles/Supreme'
 import CloseButton from './styles/CloseButton'
 import SickButton from './styles/SickButton'
+import TakeMyMoney from './TakeMyMoney'
 
 export const LOCAL_STATE_QUERY = gql`
   query {
@@ -58,7 +59,11 @@ const Cart = () => {
             </ul>
             <footer>
               <p>{formatMoney(calcTotalPrice(me.cart))}</p>
-              <SickButton>Checkout</SickButton>
+              {me.cart.length && (
+                <TakeMyMoney>
+                  <SickButton>Checkout</SickButton>
+                </TakeMyMoney>
+              )}
             </footer>
           </CartStyles>
         )
